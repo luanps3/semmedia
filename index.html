@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Página Responsiva</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <picture>
+                <!-- Versão preta para dispositivos móveis(Default) -->
+                <source srcset="./img/senac_logo_preto.png" media="(max-width:768px)">
+
+                <!-- Versão colorida para tela médias -->
+                <source srcset="./img/Senac_logo.png" media="(min-width:769px) and (max-width:1024px)">
+
+                <!-- Versão colorida para tela médias -->
+                <img src="./img/senac_logo_branco.png" alt="Logo senac"
+                srcset="
+                ./img/senac_logo_branco.png 500w,
+                ./img/Senac_logo.png 250w,
+                ./img/senac_logo_preto.png 100w,
+                ">
+            </picture>
+        </div>
+        Página Responsiva Sem Media Queries 💻📱
+    </header>
+
+<section class="content">
+    <h2>Bem-vindo(a) á minha página</h2>
+    <p>Esta página demonstra como criar um layout sem depender totalmente de media queries</p>
+</section>
+
+<section class="container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+</section>
+
+<footer>
+    &copy; 2025 Página Responsiva - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
